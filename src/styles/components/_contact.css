@@ -1,0 +1,25 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+
+  & .contact__item:has(a) {
+    font-size: var(--text-lg);
+    font-style: normal;
+    font-variation-settings:
+    "wght" 300;
+    transition: font-variation-settings .3s ease ;
+
+    &:hover {
+      font-variation-settings:
+    "wght" 500
+    }
+  }
+}
+@container grid-content (max-width:26.65rem) {
+  .contact .contact__item:has(a) {
+    font-size: var(--text-md);
+  }
+}
+
+

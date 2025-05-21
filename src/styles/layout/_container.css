@@ -1,0 +1,8 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+
+    @media(min-width: 34.4375rem) {
+        flex-direction: row;
+    }
+}

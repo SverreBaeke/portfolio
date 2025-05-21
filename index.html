@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Home</title>
+    <link rel="icon" type="image/png" href="src/images/favicon/" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="src/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="src/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="src/images/favicon/site.webmanifest" />
+    <script src="https://kit.fontawesome.com/ef754e9050.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="build/main.css">
+
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content bg-gradient">Skip to Main Content</a>
+    <div class="flex">
+        <nav class="sidebar" aria-label="Sidebar with navigation and social links">
+            <header class="sidebar__logo">sb
+                
+            </header>
+            <button class="btn btn--mode" id="theme-button" aria-label="Switch dark/light modes">
+                <svg class="mode-icon" aria-hidden="true">
+                    <use class="moon" href="src/images/svg/sprite.svg#moon"></use>
+                    <use class="sun" href="src/images/svg/sprite.svg#sun"></use>
+                </svg>
+            </button>
+            <button data-btnType="dropdown" class="sidebar__btn" aria-expanded="false" aria-controls="sidebar-menu"
+                aria-label="Toggle navigation menu">
+                <svg class="icon" aria-hidden="true">
+                    <use class="burger" href="src/images/svg/sprite.svg#burger"></use>
+                    <use class="cross" href="src/images/svg/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="sidebar__content" id="sidebar-menu">
+                <ul class="navbar" role="navigation">
+                    <li class="navbar__item"><a class="navbar__link" href="/index.html">Home</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/about.html">About</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/projects.html">Projects</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://github.com/SverreBaeke"
+                            target="_blank" rel="noopener noreferrer" aria-label="Visit my Github profile">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
+                            target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="mailto:sverre.baeke@hotmail.com"
+                            target="_blank" rel="noopener noreferrer" aria-label="Send me an e-mail">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#plane"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <footer class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</footer>
+            </div>
+        </nav>
+
+        <main id="main-content" class="hero flex">
+            <div class="hero__content">
+                <img class="hero__figure" src="src/images/svg/moon.svg" alt="" aria-hidden="true">
+                <h1 class="hero__title">My name is <span class="text--bold">Sverre Baeke...</span></h1>
+                <p class="hero__subtitle"><strong class="text--italic">Junior</strong> Web Developer</p>
+                <a class="btn" href="/about.html">Learn more about me
+                    <svg class="btn__icon bg-gradient" aria-hidden="true">
+                        <use href="src/images/svg/sprite.svg#arrow-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <img class=hero__image src="src/images/hero-image.webp" alt="Profile picture">
+        </main>
+
+        <script type="module" src="build/app.js"></script>
+    </div>
+</body>
+
+</html>

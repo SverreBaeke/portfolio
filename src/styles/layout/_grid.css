@@ -1,0 +1,108 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 34.4375rem) {
+    grid-template-columns: minmax(auto, 18.125rem) 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  & .grid__title {
+    margin: var(--spacing-md);
+    text-transform: uppercase;
+    @media (min-width: 58.3125rem) {
+      margin: var(--spacing-xxl);
+    }
+  }
+
+  & .grid__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xxl);
+    width: 96%;
+    max-width: 78.125rem;
+    min-width: 18.75rem;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+    container: grid-content / inline-size;
+
+    @media (min-width: 71.875rem) {
+      min-width: 48.375rem;
+    }
+  }
+
+  & .grid__content--projects {
+    gap: var(--spacing-xl);
+    min-width: 23.4375rem;
+
+    @media (min-width: 66.5625rem) {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+  }
+
+  & .grid__content--about {
+    @media (min-width: 58.3125rem) {
+      grid-template-columns: 0.75fr 1fr;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    & .grid__item {
+      transition: 0.5s ease;
+      &:nth-child(1) {
+        @starting-style {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+      }
+      &:nth-child(2) {
+        @starting-style {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+      }
+    }
+
+    & .grid__item--experience {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: var(--spacing-lg);
+      padding: var(--spacing-md);
+      height: fit-content;
+      color: var(--light);
+      border-radius: var(--border-radius-lg);
+      grid-column: span 2;
+      container-name: experience;
+      container-type: inline-size;
+
+      @media (max-width: 58.3125rem) {
+        grid-column: span 1;
+      }
+      @media (max-width: 71.875rem) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  & .grid__content--contact {
+    @media (min-width: 69.375rem) {
+      min-width: 59.375rem;
+      grid-template-columns: minmax(18.75rem, 1fr) minmax(28.125rem, 1.5fr);
+    }
+  }
+
+  & .grid__image {
+    border-radius: var(--border-radius-xl);
+    mask-image: url("/src/images/paint.webp ");
+    mask-position: center 80%;
+    mask-size: cover;
+  }
+}
+
+@container experience (max-width:22.6875rem) {
+  .grid__item--experience h2 {
+    font-size: var(--text-lg);
+  }
+}
+
+

@@ -1,0 +1,14 @@
+.profile-card {
+    display: grid;
+    justify-items: center;
+
+    & .profile-card__title {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    & .profile-card__subtitle {
+        font-size: var(--text-md);
+    }
+}
+

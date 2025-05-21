@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | About</title>
+    <link rel="icon" type="image/png" href="src/images/favicon/" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="src/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="src/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="src/images/favicon/site.webmanifest" />
+    <script src="https://kit.fontawesome.com/ef754e9050.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="build/main.css">
+
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content bg-gradient">Skip to Main Content</a>
+    <div class="grid">
+        <nav class="sidebar" aria-label="Sidebar with navigation and social links">
+            <header class="sidebar__logo">sb</header>
+            <button class="btn btn--mode" id="theme-button" aria-label="Switch dark/light modes">
+                <svg class="mode-icon" aria-hidden="true">
+                    <use class="moon" href="src/images/svg/sprite.svg#moon"></use>
+                    <use class="sun" href="src/images/svg/sprite.svg#sun"></use>
+                </svg>
+            </button>
+            <button data-btnType="dropdown" class="sidebar__btn" aria-expanded="false" aria-controls="sidebar-menu"
+                aria-label="Toggle navigation menu">
+                <svg class="icon" aria-hidden="true">
+                    <use class="burger" href="src/images/svg/sprite.svg#burger"></use>
+                    <use class="cross" href="src/images/svg/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="sidebar__content" id="sidebar-menu">
+                <ul class="navbar" role="navigation">
+                    <li class="navbar__item"><a class="navbar__link" href="/index.html">Home</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/about.html">About</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/projects.html">Projects</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="/contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://github.com/SverreBaeke" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit my Github profile">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
+                            target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Send me an e-mail">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#plane"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <footer class="align-end">Copyright ©2024 Fawzi Sayed. All rights reserved.</footer>
+            </div>
+        </nav>
+        <header>
+            <h1 class="grid__title">
+                <span class="subtitle">
+                    Nice to meet you!
+                </span>
+                Welcome to...
+            </h1>
+        </header>
+        <main id="main-content" class="grid__content grid__content--about">
+
+            <section class="grid__item">
+                <div class="profile-card">
+                    <img class="profile-card__image" src="src/images/about-image.webp" alt="Profile picture">
+                    <h2 class="profile-card__title text--gradient">sverre baeke</h2>
+                    <p class="profile-card__subtitle"><strong class="text--italic">Junior </strong>Web Developer</p>
+                    <a class="btn" href="/contact.html">Contact me
+                        <svg class="btn__icon bg-gradient" aria-hidden="true">
+                            <use href="src/images/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+            <section class="grid__item">
+                <div class="info-layout">
+                    <address>
+                        <ul class="contact">
+                            <li>
+                                <a class="info-tag" href="tel:+32473539053">
+                                    <i class="info-tag__icon fa-solid fa-phone" aria-hidden="true"></i>
+                                    +32 473 53 90 53
+                                </a>
+                            </li>
+                            <li>
+                                <a class="info-tag" href="mailto:sverre.baeke@hotmail.com">
+                                    <i class="info-tag__icon fa-brands fa-at" aria-hidden="true"></i>
+                                    sverre.baeke@hotmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                    <ul>
+                        <li class="info-tag">
+                            <i class="info-tag__icon fa-solid fa-user" aria-hidden="true"></i>
+                            29 yrs
+                        </li>
+                        <li class="info-tag">
+                            <i class="info-tag__icon fa-solid fa-location-dot" aria-hidden="true"></i>
+                            Belgium, Maarkedal
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="info-layout">
+                    <div class="info-layout__column">
+                        <h2 class="info-layout__heading"><span class="text--upper text--gradient">Aspiring</span> Web
+                            Developer</h2>
+                        <p>
+                            Hi! I'm Sverre Baeke, a programming student at ArteveldeHogeschool with a passion for
+                            building websites and web applications. I focus on clean design, responsive layouts, and
+                            top-notch SEO to create seamless user experiences.
+                        </p>
+                    </div>
+                    <div class="info-layout__column">
+                        <h2 class="info-layout__heading"><span class="text--upper text--gradient">9 Years</span> of
+                            Professional Experience
+                        </h2>
+                        <p>
+                            With 9 years of experience in another industry, I bring reliability, teamwork, and
+                            problem-solving skills to every project. I thrive in collaborative environments, love
+                            tackling challenges, and always strive to find the best solutions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="grid__item grid__item--experience bg-gradient">
+                <h2 class="text--upper">my experience</h2>
+                <div class="info-layout">
+                    <div class="info-layout__item">
+                        <p class="text--bold text--italic">-2015 - 2024</p>
+                        <p>-Belgan</p>
+                    </div>
+                    <p class="text--upper text--bold text--lg">advanced operator</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="build/app.js"></script>
+</body>
+
+</html>

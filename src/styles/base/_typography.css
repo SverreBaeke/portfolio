@@ -1,0 +1,34 @@
+.text--bold {
+    font-weight: bold;
+}
+
+.text--upper {
+    text-transform: uppercase;
+}
+
+.text--italic {
+    font-style: italic;
+}
+
+.text--gradient {
+    color: transparent;
+    background-image: linear-gradient(
+      90deg,
+      var(--orange),
+      var(--pink) 52%,
+      var(--purple)
+    );
+    background-clip: text;
+}
+
+.subtitle {
+    display: block;
+    font-size: var(--text-md);
+    text-transform: none;
+    font-style: italic;
+}
+
+.text--lg {
+    font-size: var(--text-lg);
+}
+

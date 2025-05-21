@@ -1,0 +1,107 @@
+.sidebar {
+  grid-row: span 2;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primaryBgColor);
+  color: var(--light);
+  padding: var(--spacing-sm);
+  width: 100%;
+  margin-bottom: var(--spacing-lg);
+  view-transition-name: sidebar;
+  z-index: 5;
+
+  @media (min-width: 34.4375rem) {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    min-height: 100svh;
+    width: fit-content;
+    max-width: 18.125rem;
+    padding: var(--spacing-lg);
+    gap: var(--spacing-md);
+    margin-bottom: 0;
+  }
+  @media (min-width: 56.875rem) {
+    padding: var(--spacing-lg);
+  }
+
+  & .sidebar__logo {
+    background-color: var(--light);
+    color: var(--dark);
+    font-weight: 700;
+    font-size: var(--text-md);
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    width: var(--xl);
+    height: var(--xl);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-xl);
+    box-shadow: 0px 0px 1px 2px var(--orange), 0px 0px 2px 4px var(--pink), 0px 0px 4px 6px var(--purple);
+  }
+
+  & .sidebar__btn {
+    border: none;
+    background-color: transparent;
+    border-radius: none;
+  
+    @media (min-width: 34.4375rem) {
+      display: none;
+    }
+  
+    & .icon {
+      transform: rotate(0deg);
+      background-image: none;
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: var(--light);
+    }
+  }
+
+  & .sidebar__content {
+    position: absolute;
+    transform: translateX(-100%);
+    top: 4.75rem;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100svh - 4.75rem);
+    max-height: 37rem;
+    width: 100%;
+    padding: var(--spacing-lg);
+    background-color: var(--dark);
+  
+    @media (min-width: 34.4375rem) {
+      position: static;
+      transform:translateX(0%);
+      padding: 0;
+      min-height: auto;
+      height: 100%;
+      background-color: transparent;
+    }
+  }
+}
+
+.burger {
+  display: block;
+}
+.cross {
+  display: none;
+}
+
+.nav-open {
+  overflow: hidden;
+
+  & .sidebar__content {
+    transition: transform 0.3s ease;
+    transform:translateX(0%);
+  }
+  & .burger {
+    display: none;
+  }
+  & .cross {
+    display: block;
+  }
+}
