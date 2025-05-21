@@ -18,7 +18,7 @@
     width: fit-content;
     max-width: 18.125rem;
     padding: var(--spacing-lg);
-    gap: var(--spacing-md);
+    gap: var(--spacing-xl);
     margin-bottom: 0;
   }
   @media (min-width: 56.875rem) {
@@ -71,12 +71,15 @@
     max-height: 37rem;
     width: 100%;
     padding: var(--spacing-lg);
-    background-color: var(--dark);
+    background-color: var(--primaryBgColor);
   
     @media (min-width: 34.4375rem) {
-      position: static;
-      transform:translateX(0%);
+      position: sticky;
+      top: 0;
+      left: 0;
       padding: 0;
+      padding-top: 30px;
+      transform:translateX(0%);
       min-height: auto;
       height: 100%;
       background-color: transparent;
