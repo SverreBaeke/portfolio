@@ -5,20 +5,16 @@
   height: 16.625rem;
   position: relative;
   gap: var(--spacing-md);
-  width: 100%;
-  margin: 0 auto;
-  scale: .7; 
+  width: 90%;
+  margin: 0 auto; 
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-md);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 4px 0px;
   container: card / inline-size;
-  animation: scale linear;
-  animation-timeline: view(12.5rem);
+  transition: .2s ease;
 
-  &:last-of-type {
-    animation: none;
-    scale: 1; 
-    opacity: 1;
+  &:hover {
+    transform: scale(1.05);
   }
 
 
@@ -56,7 +52,7 @@
     & .card__icon {
       width: 5rem;
       height: 5rem;
-      transition: 0.3s ease;
+      transition: 0.2s ease;
       transform: rotate(-45deg);
       fill: var(--secondaryIconColor);
     }
@@ -73,7 +69,8 @@
     grid-row: 1 / -1;
     flex-shrink: 0;
   }
-}
+  }
+
 
 @container card (max-width: 26.25rem) {
   .card .card__content .card__title {
