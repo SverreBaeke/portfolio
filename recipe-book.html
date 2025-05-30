@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Recipe book</title>
+    <link rel="icon" type="image/png" href="src/images/favicon/" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="src/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="src/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="src/images/favicon/site.webmanifest" />
+    <script src="https://kit.fontawesome.com/ef754e9050.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="build/main.css">
+
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content bg-gradient">Skip to Main Content</a>
+    <div class="grid">
+        <nav class="sidebar" aria-label="Sidebar with navigation and social links">
+            <header class="sidebar__logo">sb</header>
+            <button class="btn btn--mode" id="theme-button" aria-label="Switch dark/light modes">
+                <svg class="mode-icon" aria-hidden="true">
+                    <use class="moon" href="src/images/svg/sprite.svg#moon"></use>
+                    <use class="sun" href="src/images/svg/sprite.svg#sun"></use>
+                </svg>
+            </button>
+            <button data-btnType="dropdown" class="sidebar__btn" aria-expanded="false" aria-controls="sidebar-menu"
+                aria-label="Toggle navigation menu">
+                <svg class="icon" aria-hidden="true">
+                    <use class="burger" href="src/images/svg/sprite.svg#burger"></use>
+                    <use class="cross" href="src/images/svg/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="sidebar__content" id="sidebar-menu">
+                <ul class="navbar" role="navigation">
+                    <li class="navbar__item"><a class="navbar__link" href="/portfolio-SverreBaeke/index.html">Home</a>
+                    </li>
+                    <li class="navbar__item"><a class="navbar__link" href="/portfolio-SverreBaeke/about.html">About</a>
+                    </li>
+                    <li class="navbar__item"><a class="navbar__link"
+                            href="/portfolio-SverreBaeke/projects.html">Projects</a></li>
+                    <li class="navbar__item"><a class="navbar__link"
+                            href="/portfolio-SverreBaeke/contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://github.com/SverreBaeke" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit my Github profile">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
+                            target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Send me an e-mail">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#plane"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <footer class="align-end text--sm">Copyright ©2024 Fawzi Sayed. All rights reserved.</footer>
+            </div>
+        </nav>
+
+        <header>
+            <h1 class="grid__title">
+                <span class="subtitle">
+                    Project
+                </span>
+                Recipe book
+            </h1>
+        </header>
+        <main id="main-content" class="grid__content">
+            <!-- <section class="banner">
+                <img class="banner__image" src="src/images/stam-mobile-homepage.webp" alt="stam">
+            </section> -->
+            <article class="article">
+                <p class="article__text">
+                    Through this project, I gained a solid understanding of how to set up and work with Express as a
+                    backend server framework, which was essential in handling routes and managing HTTP requests. Using
+                    body-parser made processing incoming data seamless, allowing me to easily extract and work with
+                    information sent from the frontend.
+                </p>
+
+                <section class="article__block">
+                    <h2 class="article__heading text--gradient">What I Learned</h2>
+                    <p class="article__text">
+                        Through this project, I gained a solid understanding of how to set up and work with Express as a
+                        backend server framework, which was essential in handling routes and managing HTTP requests.
+                        Using body-parser made processing incoming data seamless, allowing me to easily extract and work
+                        with information sent from the frontend.
+                    </p>
+                    <p class="article__text">
+                        Managing environment variables with dotenv taught me the importance of keeping sensitive
+                        information secure and out of my main codebase, a best practice I will carry forward. I also
+                        discovered how uuid simplifies the creation of unique identifiers for recipes, helping maintain
+                        data integrity across the app.
+                    </p>
+
+                    <p class="article__text">
+                        Additionally, integrating nodemon significantly improved my development workflow by
+                        automatically restarting the server whenever I saved changes, saving me valuable time during
+                        testing and debugging.
+                    </p>
+
+                    <p class="article__text">
+                        All these experiences combined have greatly enhanced my backend development skills and prepared
+                        me to tackle more complex full-stack projects with confidence.
+                    </p>
+
+                    <a class="btn" href="https://github.com/pgmgent-pgm-2/recept-web-SverreBaeke" target="_blank"
+                        noopener noreferrer>Repository
+                        <svg class="btn__icon bg-gradient" aria-hidden="true">
+                            <use href="src/images/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </section>
+
+            </article>
+        </main>
+    </div>
+    <script type="module" src="build/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | STAM</title>
+    <link rel="icon" type="image/png" href="src/images/favicon/" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="src/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="src/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="src/images/favicon/site.webmanifest" />
+    <script src="https://kit.fontawesome.com/ef754e9050.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="build/main.css">
+
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content bg-gradient">Skip to Main Content</a>
+    <div class="grid">
+        <nav class="sidebar" aria-label="Sidebar with navigation and social links">
+            <header class="sidebar__logo">sb</header>
+            <button class="btn btn--mode" id="theme-button" aria-label="Switch dark/light modes">
+                <svg class="mode-icon" aria-hidden="true">
+                    <use class="moon" href="src/images/svg/sprite.svg#moon"></use>
+                    <use class="sun" href="src/images/svg/sprite.svg#sun"></use>
+                </svg>
+            </button>
+            <button data-btnType="dropdown" class="sidebar__btn" aria-expanded="false" aria-controls="sidebar-menu"
+                aria-label="Toggle navigation menu">
+                <svg class="icon" aria-hidden="true">
+                    <use class="burger" href="src/images/svg/sprite.svg#burger"></use>
+                    <use class="cross" href="src/images/svg/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="sidebar__content" id="sidebar-menu">
+                <ul class="navbar" role="navigation">
+                    <li class="navbar__item"><a class="navbar__link" href="/portfolio-SverreBaeke/index.html">Home</a>
+                    </li>
+                    <li class="navbar__item"><a class="navbar__link" href="/portfolio-SverreBaeke/about.html">About</a>
+                    </li>
+                    <li class="navbar__item"><a class="navbar__link"
+                            href="/portfolio-SverreBaeke/projects.html">Projects</a></li>
+                    <li class="navbar__item"><a class="navbar__link"
+                            href="/portfolio-SverreBaeke/contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://github.com/SverreBaeke" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit my Github profile">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.linkedin.com/in/sverre-baeke-889291326/"
+                            target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="mailto:sverre.baeke@hotmail.com" target="_blank"
+                            rel="noopener noreferrer" aria-label="Send me an e-mail">
+                            <svg class="socials__icon" aria-hidden="true">
+                                <use href="src/images/svg/sprite.svg#plane"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <footer class="align-end text--sm">Copyright ©2024 Fawzi Sayed. All rights reserved.</footer>
+            </div>
+        </nav>
+
+        <header>
+            <h1 class="grid__title">
+                <span class="subtitle">
+                    Project
+                </span>
+                STAM
+            </h1>
+        </header>
+        <main id="main-content" class="grid__content">
+            <!-- <section class="banner">
+                <img class="banner__image" src="src/images/stam-mobile-homepage.webp" alt="stam">
+            </section> -->
+            <article class="article">
+                <p class="article__text">
+                    The goal of this project was to rebuild the STAM website, focusing on modern
+                    HTML and CSS practices. This was my first project where I applied a component-based approach to
+                    styling. Instead of writing all the CSS in one file, I created separate CSS files for each component
+                    of the webpage, such as the header, footer, navigation, and main content sections.
+                </p>
+
+                <section class="article__block">
+                    <h2 class="article__heading text--gradient">What I Learned</h2>
+                    <p class="article__text">
+                        In this project, I learned how to work with a component-based approach to CSS, which was a
+                        significant milestone in my development journey. Instead of writing all styles in one single CSS
+                        file, I organized my CSS into separate files for each individual component of the webpage. This
+                        modular approach made the code much easier to manage, maintain, and scale.
+                    </p>
+
+                    <p class="article__text">
+                        It also helped me understand the importance of separation of concerns, keeping the structure and
+                        styling of the webpage organized and distinct. By working this way, I was able to avoid style
+                        conflicts and make the components reusable across the project.
+                    </p>
+
+                    <p class="article__text">
+                        Additionally, I gained practical experience with responsive design techniques, ensuring that the
+                        webpage adapts smoothly to different screen sizes and devices.
+                    </p>
+
+                    <p class="article__text">
+                        Overall, this project strengthened my foundational CSS skills and taught me best practices that
+                        will be essential for building larger and more complex front-end projects in the future.
+                    </p>
+                    <a class="btn" href="https://github.com/pgm-2425-atwork-1/project-1-SverreBaeke" target="_blank" noopener noreferrer>Repository
+                        <svg class="btn__icon bg-gradient" aria-hidden="true">
+                            <use href="src/images/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </section>
+
+            </article>
+        </main>
+    </div>
+    <script type="module" src="build/app.js"></script>
+</body>
+
+</html>
