@@ -92,8 +92,8 @@
       }
     }
 
-    & .grid__image {
-      border-radius: var(--border-radius-xl);
-    }
+  }
+  & .grid__image {
+    border-radius: var(--border-radius-xl);
   }
 }
